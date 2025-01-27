@@ -12,7 +12,7 @@ public class App {
     }
 
 
-    public static int superIntPrompt(Scanner scanner, int lowerBound, int upperBound, String promptMessage, String errorMessage, int defaultValue) {
+    public static int superIntPrompt(Scanner scanner, int lowerBound, int upperBound, String promptMessage, String errorMessage) {
         int inputValue;
         String inputString;
 
@@ -82,7 +82,7 @@ public class App {
 
 
 
-        int result = superIntPrompt(scanner, 10, 20, "Enter a number between 10 and 20:", "Input not valid, please try again.", 100);
+        int result = superIntPrompt(scanner, 10, 20, "Enter a number between 10 and 20:", "Input not valid, please try again.");
         assert result >= 10 && result <= 20 : "Test failed! The input should be between 10 and 20.";
 
 
